@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINDOS MOMENTOS - Quiz</title>
+    <link rel="stylesheet" href="estilos2_index.css">
+</head>
+<body>
+    <header class="encab_1pag2">
+        <div class="contenedor">
+            <h1 class="th1">QUIZ</h1>
+            <p class="ph1">VEAMOS SI SABES ALGO POP</p>
+        </div>
+    </header>
+
+    <section class="quiz">
+        <h1>QUIZ DEL AMOR</h1>
+        <p>Responde a las siguientes preguntas.</p>
+        
+        <div class="pregunta">
+            <h3>1. ¿Que dia especfico hablamos?</h3>
+            <label><input type="radio" name="pregunta1" value="a"> 29 de julio</label>
+            <label><input type="radio" name="pregunta1" value="b"> 3 agosto</label>
+            <label><input type="radio" name="pregunta1" value="c"> Universidad</label>
+        </div>
+        
+        <div class="pregunta">
+            <h3>2. ¿Cuál fue nuestra primera cita?</h3>
+            <label><input type="radio" name="pregunta2" value="a"> Ir al cine</label>
+            <label><input type="radio" name="pregunta2" value="b">Comer Hamburgesas</label>
+            <label><input type="radio" name="pregunta2" value="c"> Parque</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>3.¿Me amas? (de curioso no mas si jiji)</h3>
+            <label><input type="radio" name="pregunta3" value="a"> Si</label>
+            <label><input type="radio" name="pregunta3" value="b">Si</label>
+            <label><input type="radio" name="pregunta3" value="c">Si</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>4.¿Cual es la comida que comeriamos siempre los 2?</h3>
+            <label><input type="radio" name="pregunta4" value="a"> Sushi</label>
+            <label><input type="radio" name="pregunta4" value="b">Panqueques</label>
+            <label><input type="radio" name="pregunta4" value="c">Hamburgesas</label>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>5.¿Mi posicion favorita u.u ?</h3>
+            <label><input type="radio" name="pregunta5" value="a"> cucharita</label>
+            <label><input type="radio" name="pregunta5" value="b">pa atra *-*</label>
+            <label><input type="radio" name="pregunta5" value="c">encima tuyo</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>6.¿Cuando nos vamos ver?</h3>
+            <label><input type="radio" name="pregunta6" value="a">Hoy</label>
+            <label><input type="radio" name="pregunta6" value="b">Fin de semana</label>
+            <label><input type="radio" name="pregunta6" value="c">Nunca</label>
+
+            <P>ayuda : piensa en mis intenciones jjiji u.u</P>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>7.¿Donde te pedi pololeo?</h3>
+            <label><input type="radio" name="pregunta7" value="a">Parque Bicentenario</label>
+            <label><input type="radio" name="pregunta7" value="b">En la Universidad</label>
+            <label><input type="radio" name="pregunta7" value="c">Cerro San Cristobal</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>8.¿Quien dijo te amo primero?</h3>
+            <label><input type="radio" name="pregunta8" value="a">Vicente Roa Carreño </label>
+            <label><input type="radio" name="pregunta8" value="b">MI PERRO</label>
+            <label><input type="radio" name="pregunta8" value="c">Karinita Bravo</label>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>9.¿En que clase te vi la primera vez?</h3>
+            <label><input type="radio" name="pregunta9" value="a">Algoritmos</label>
+            <label><input type="radio" name="pregunta9" value="b">Tecnologias Disruptivas </label>
+            <label><input type="radio" name="pregunta9" value="c">Fisica Experimental</label>
+        </div>
+
+        <div class="pregunta">
+            <h3>10.¿Que dia veniste a mi casa por primera vez</h3>
+            <label><input type="radio" name="pregunta10" value="a">9 de agosto</label>
+            <label><input type="radio" name="pregunta10" value="b">12 de octubre </label>
+            <label><input type="radio" name="pregunta10" value="c">17 de septiembre</label>
+        </div>
+        
+        <!-- Agrega más preguntas aquí -->
+        
+        <button id="calcular">Calcular resultado</button>
+        <div id="resultado"></div>
+    </section>
+
+    <!-- Agrega otras secciones de tu página aquí -->
+
+    <script>
+        document.getElementById("calcular").addEventListener("click", function() {
+            // Obtener las respuestas seleccionadas por el usuario
+            var respuestas = {
+                pregunta1: document.querySelector('input[name="pregunta1"]:checked').value,
+                pregunta2: document.querySelector('input[name="pregunta2"]:checked').value,
+                pregunta3: document.querySelector('input[name="pregunta3"]:checked').value,
+                pregunta4: document.querySelector('input[name="pregunta4"]:checked').value,
+                pregunta5: document.querySelector('input[name="pregunta5"]:checked').value,
+                pregunta6: document.querySelector('input[name="pregunta6"]:checked').value,
+                pregunta7: document.querySelector('input[name="pregunta7"]:checked').value,
+                pregunta8: document.querySelector('input[name="pregunta8"]:checked').value,
+                pregunta9: document.querySelector('input[name="pregunta9"]:checked').value,
+                pregunta10: document.querySelector('input[name="pregunta10"]:checked').value,                
+                // Agrega más respuestas aquí
+            };
+
+            // Calcular el puntaje o resultado basado en las respuestas
+            var puntaje = 0;
+            if (respuestas.pregunta1 === "b") puntaje++;
+            if (respuestas.pregunta2 === "c") puntaje++;
+            if (respuestas.pregunta3 === "a") puntaje++;
+            if (respuestas.pregunta4 === "c") puntaje++;
+            if (respuestas.pregunta5 === "b") puntaje++;
+            if (respuestas.pregunta6 === "a") puntaje++;
+            if (respuestas.pregunta7 === "c") puntaje++;
+            if (respuestas.pregunta8 === "a") puntaje++;
+            if (respuestas.pregunta9 === "b") puntaje++;
+            if (respuestas.pregunta10 === "c") puntaje++;
+
+            // Suma más puntos por cada respuesta correcta
+
+            // Mostrar el resultado personalizado
+            var resultadoDiv = document.getElementById("resultado");
+            if (puntaje === 0) {
+                resultadoDiv.innerHTML = "¡Ups! Parece que necesitamos compartir más momentos juntos.";
+            } else if (puntaje < 2) {
+                resultadoDiv.innerHTML = "¡No está mal! Pero aún hay mucho por descubrir entre nosotros.";
+            } else {
+                resultadoDiv.innerHTML = "¡Wow! Te ganaste un cupon. Te amo. <a href='index4.html'>Ver cupón</a>";
+            }
+        });
+    </script>
+</body>
+</html>

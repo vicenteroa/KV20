@@ -1,0 +1,124 @@
+*{
+   margin: 0;
+   padding: 0px;
+   box-sizing: border-box;
+
+   /*FUENTE*/
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*HEADER*/
+
+header{
+    width: 100%;
+    height: 600px;
+    /*background: #659999;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(34, 95%, 23%, 0.89), hsla(55, 29%, 70%, 0.664)),url(portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(37, 100%, 22%, 0.845), hsla(160, 35%, 27%, 0.664)),url(portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.en_1, .p_1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/*SECCION UNO*/
+
+.seccion_1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.contenido_sec1 {
+    display: inline-block;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.htitulo_sec1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.imagen_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imagen_s1 {
+    max-width: 30%; /* Reducir el tamaño de la imagen al 30% */
+    border-radius: 10px; /* Menos redondeada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+.p1_sec1, .p2_sec1 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+
+/* Estilos mejorados para la segunda sección */
+.seccion_2 {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.seccion_2 h1 {
+    font-size: 32px;
+    color: #964b00;
+    margin-bottom: 15px;
+}
+
+.seccion_2 p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.imagen_s2 {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.seccion_2 a {
+    color: #964b00;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #964b00;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.seccion_2 a:hover {
+    background-color: #8E6F12;
+    color: white;
+}

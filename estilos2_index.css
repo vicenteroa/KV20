@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    height: 600px;
+    /*background: #659999;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(34, 100%, 23%, 0.89), hsla(55, 29%, 70%, 0.664)),url(one-piece-anime.gif);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(37, 110%, 22%, 0.845), hsla(160, 100%, 27%, 0.664)),url(one-piece-anime.gif); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-position: center top -200px; /* Puedes ajustar esto según tus necesidades */
+}
+
+.th1, .ph1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+/* Aumentar el tamaño del h1 */
+.th1 {
+    font-size: 70px; /* Ajusta el tamaño según tus preferencias */
+}
+
+/* Centrar verticalmente el contenido */
+.contenedor {
+    position: relative;
+    top: 50%; /* Mueve el contenido hacia abajo a la mitad de la altura del contenedor */
+    transform: translateY(-50%); /* Corrige el desplazamiento hacia arriba por la mitad de la altura */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Secciones */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Enlaces */
+a {
+    color: #964b00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff5e63;
+    color: #fff;
+}
